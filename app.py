@@ -32,6 +32,8 @@ selected_medicine_name = st.selectbox(
 if st.button('Recommend Medicine'):
     recommendations = recommend(selected_medicine_name)
     for j, recommended_medicine in enumerate(recommendations, start=1):
+        # Concate the recommended_medicines
+        recommended_medicine = recommended_medicine.replace(" ", "_")
         st.write(j, recommended_medicine)
         st.write(f"Click here -> https://pharmeasy.in/search/all?name={recommended_medicine}")
 
