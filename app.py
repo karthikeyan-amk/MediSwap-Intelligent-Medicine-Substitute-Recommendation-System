@@ -37,4 +37,4 @@ if st.button('Recommend Medicine'):
 
 # Image load
 image = Image.open('images/medicine-image.png')
-st.image(image, caption='Recommended Medicines')
+st.image(image, caption='Recommended Medicines are shown here which are subjected to the dataset')
