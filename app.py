@@ -20,7 +20,7 @@ def recommend(medicine):
 # Application Frontend
 
 # Title of the Application
-st.title('Medicine Recommender System')
+st.title('MediSwap')
 
 # Searchbox
 selected_medicine_name = st.selectbox(
@@ -36,5 +36,5 @@ if st.button('Recommend Medicine'):
         st.write(f"Click here -> https://pharmeasy.in/search/all?name={recommended_medicine}")
 
 # Image load
-image = Image.open('images/medicine-image.jpg')
+image = Image.open('images/medicine-image.png')
 st.image(image, caption='Recommended Medicines')
