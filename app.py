@@ -3,10 +3,6 @@ import pickle
 import pandas as pd
 from PIL import Image
 
-# To Add External CSS
-with open('css/style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
 # Application Backend
 medicines_dict = pickle.load(open('medicine_dict.pkl', 'rb'))
 medicines = pd.DataFrame(medicines_dict)
